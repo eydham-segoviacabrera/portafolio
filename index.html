@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eydham Segovia - UCSP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        body {
+            background-color: white;
+            color: black;
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 16px;
+        }
+        
+        /* Header con foto GRANDE y llamativa */
+        .header {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: flex-start;
+            gap: 35px;
+        }
+        
+        .photo {
+            width: 180px;
+            height: 220px;
+            flex-shrink: 0;
+        }
+        
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: 3px solid #003366;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .photo img:hover {
+            transform: scale(1.02);
+        }
+        
+        .header-content {
+            flex: 1;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 8px;
+        }
+        
+        .title {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.5;
+        }
+        
+        .location {
+            font-weight: bold;
+            color: #003366;
+            margin-top: 5px;
+        }
+        
+        /* Secciones */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        /* Listas simples */
+        .item {
+            margin-bottom: 15px;
+        }
+        
+        .item-title {
+            font-weight: bold;
+            color: #003366;
+        }
+        
+        .item-details {
+            color: #666;
+            font-size: 14px;
+            margin-left: 20px;
+        }
+        
+        .item-description {
+            margin-top: 5px;
+            margin-left: 20px;
+        }
+        
+        /* Enlaces */
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Lista de compañeros */
+        .companeros-list {
+            list-style: none;
+            margin-left: 20px;
+        }
+        
+        .companeros-list li {
+            margin-bottom: 8px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+                font-size: 14px;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+            
+            .photo {
+                align-self: center;
+                width: 150px;
+                height: 180px;
+            }
+            
+            .name {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="photo">
+            <img src="https://i.ibb.co/v6PFQvWQ/Foto-Carnet.jpg" alt="Eydham Segovia">
+        </div>
+        <div class="header-content">
+            <div class="name">Eydham Jesus Segovia Cabrera</div>
+            <div class="title">Estudiante de Ciencias de la Computación</div>
+            <div class="contact-info">
+                Universidad Católica San Pablo<br>
+                Email institucional: <a href="mailto:eydham.segovia@ucsp.edu.pe">eydham.segovia@ucsp.edu.pe</a><br>
+                Email personal: <a href="mailto:eydham.cabrera@gmail.com">eydham.cabrera@gmail.com</a><br>
+                GitHub: <a href="https://github.com/eydhamcabrera-cmd">eydhamcabrera-cmd</a><br>
+                <div class="location">📍 Arequipa, Perú</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Presentación</div>
+        <div class="item">
+            Estudiante de Ciencias de la Computación en la Universidad Católica San Pablo. 
+            Actualmente aprendiendo programación en C++ como parte de mi formación académica. 
+            Interesado en el desarrollo de software y la resolución de problemas algorítmicos.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Habilidades Técnicas</div>
+        <div class="item">
+            <div class="item-title">Lenguajes de Programación</div>
+            <div class="item-details">C++ (nivel universitario), Python (básico), HTML básico</div>
+        </div>
+        
+        <div class="item">
+            <div class="item-title">Idiomas</div>
+            <div class="item-details">Español (nativo), Inglés (básico)</div>
+        </div>
+        
+        <div class="item">
+            <div class="item-title">En Aprendizaje</div>
+            <div class="item-details">Algoritmos, Estructuras de Datos, Programación Orientada a Objetos</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Proyectos Universitarios</div>
+        
+        <div class="item">
+            <div class="item-title">Proyectos en C++</div>
+            <div class="item-description">
+                Desarrollo de programas y ejercicios en C++ como parte del currículo de la carrera de Ciencias de la Computación en la UCSP.
+            </div>
+        </div>
+        
+        <div class="item">
+            <div class="item-title">Asignaturas Actuales</div>
+            <div class="item-description">
+                Cursando materias fundamentales: Programación I, Matemáticas Discretas, Introducción a la Computación.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Intereses</div>
+        <div class="item">
+            <div class="item-details">
+                Música, ciclismo, videojuegos, cocina, viajes y exploración de nuevas tecnologías.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Compañeros UCSP</div>
+        <div class="item">
+            <div class="item-description">
+                Conectando con otros estudiantes de Ciencias de la Computación:
+            </div>
+            <ul class="companeros-list">
+                <li><a href="https://derekloayza.github.io" target="_blank">Derek Loayza - Ciencias de la Computación</a></li>
+                <li><a href="https://nickolasjackmatiuabarcabedregal.github.io" target="_blank">Nickolas Abarca - Ciencias de la Computación</a></li>
+                <li><a href="#">María García - Ciencias de la Computación</a></li>
+                <li><a href="#">Carlos López - Ciencias de la Computación</a></li>
+                <li><a href="#">Ana Torres - Ciencias de la Computación</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Información Personal</div>
+        <div class="item">
+            <div class="item-details">
+                <strong>Universidad:</strong> Universidad Católica San Pablo (UCSP)<br>
+                <strong>Facultad:</strong> Ciencias de la Computación<br>
+                <strong>Dirección:</strong> Jose Santos Chocano 206, Arequipa<br>
+                <strong>Colegio de procedencia:</strong> Virgen De La Reconciliación-Camaná<br>
+                <strong>Email institucional:</strong> <a href="mailto:eydham.segovia@ucsp.edu.pe">eydham.segovia@ucsp.edu.pe</a><br>
+                <strong>Email personal:</strong> <a href="mailto:eydham.cabrera@gmail.com">eydham.cabrera@gmail.com</a><br>
+                <strong>Ubicación:</strong> Arequipa, Perú<br>
+                <strong>Disponibilidad:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Enlaces</div>
+        <div class="item">
+            <div class="item-details">
+                • <a href="https://github.com/eydhamcabrera-cmd">GitHub</a><br>
+                • <a href="www.linkedin.com/in/eydham-cabrera-989806379">LinkedIn</a><br>
+                • <a href="https://ucsp.edu.pe">Universidad Católica San Pablo</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
